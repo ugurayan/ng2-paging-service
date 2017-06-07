@@ -89,11 +89,14 @@ The other code examples explore supporting attributes which may be mixed and mat
 
 **Calling Function**
 
-The text `{page}` will display the page number
-```html
+In any page including  this component to reach any attribute of given above you can call function using (onPageChange) 
+method and define a method you give the name ike below.
+
+```
 callMyEvent(event) {
     this.pagination.CurrentPage = event.currentPage;
     this.pagination.TotalItems = event.totalItems;
     this.pagination.PageSize = event.pageSize;
     this.pagination.TotalPageLinkButtons = event.totalPageLinkButtons;
-  }```
+  }
+```
