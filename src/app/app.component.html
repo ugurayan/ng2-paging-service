@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<paging-component
+  [TotalItems]="pagination.TotalItems"
+  [CurrentPage]="pagination.CurrentPage"
+  [PageSize]="pagination.PageSize"
+  [TotalPageLinkButtons]="pagination.TotalPageLinkButtons"
+  [RowsPerPageOptions]="pagination.RowsPerPageOptions"
+  (onPageChange)="myChanges($event)"></paging-component>
